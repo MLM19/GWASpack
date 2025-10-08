@@ -1,0 +1,7 @@
+Package: gwasTools
+Type: Package
+Title: Tools for Handling GWAS Summary Statistics
+Version: 0.1.0
+Author: María López
+Description: Modular tools for importing and processing GWAS summary statistics.
+Depends: R (>= 4.0) 
