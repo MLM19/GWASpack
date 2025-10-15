@@ -1,7 +1,21 @@
-Package: gwasTools
+DESCRIPTION: plain text file
+Contains package metadata, including title, author, version, dependencies, and a short description.
+example:
+Package: GWASpack
 Type: Package
 Title: Tools for Handling GWAS Summary Statistics
-Version: 0.1.0
-Author: María López
-Description: Modular tools for importing and processing GWAS summary statistics.
-Depends: R (>= 4.0) 
+Version: 0.1.1
+Author: María López (@MLM19)
+Description: Modular tools for importing and processing GWAS summary statistics in a flexible and extensible package. It follows the SOLID principles.
+License: MIT
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 4.0)
+Imports:
+    data.table,
+    ggplot2,
+    dplyr,
+    methods
+Suggests:
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr

@@ -1,23 +1,37 @@
 # *GWASpack*: Package to handling GWAS summary statistics
 
 This project aims to create tools to easily handle summary statistics in R languange. 
-Ideally modular 
+This package is designed around SOLID principles, with modules that interact with each other. 
 
 ## Repository Structure
 ```graphql
-GWASpack/
-│
-├── DESCRIPTION                 #Package metadata
-├── NAMESPACE                   #method/class exports & imports
-├── R/                          #R scripts containing class & method definitions
-│   ├── GWAS-class.R            #Class definition for GWAS
-│   ├── GWAS-methods.R          #Methods for GWAS objects 
-│   ├── GWAS-import.R           #Functions to import summary statistics
-│   ├── ...                     #Future implementations
-│   └── utils.R                 #Helper functions
-├── man/                        #Rd documentation (from Roxygen comments)
+├── DESCRIPTION
+├── NAMESPACE
+├── R/
+│   ├── main.R
+│   ├── interfaces.R
+│   ├── data_loader.R
+│   ├── column_standardizer.R
+│   ├── data_cleaner.R
+│   ├── association_test.R
+│   ├── plot_results.R
+│   └──  dependency_injection.R
+├── man/
+│   └── (auto-generated documentation)
 ├── tests/
-└── vignettes/
+│   ├── testthat/
+│   │   ├── test_data_loader.R
+│   │   ├── test_standardizer.R
+│   │   ├── test_association_test.R
+│   │   └── test_plot_results.R
+│   └── testthat.R
+├── inst/
+│   └── extdata/ (sample datasets)
+├── vignettes/
+│   └── introduction.Rmd
+├── .Rbuildignore
+├── .gitignore
+└── README.md
 ```
 
 ## Tech Stack
