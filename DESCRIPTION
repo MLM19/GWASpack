@@ -1,6 +1,3 @@
-DESCRIPTION: plain text file
-Contains package metadata, including title, author, version, dependencies, and a short description.
-example:
 Package: GWASpack
 Type: Package
 Title: Tools for Handling GWAS Summary Statistics
