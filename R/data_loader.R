@@ -20,3 +20,16 @@
 #' data <- load_sumstats("sumstats.txt")
 #' }
 #' @export
+
+# Library dependencies
+library(data.table)
+library(dplyr)
+
+# main function
+    # 1. read file --> type .tsv, .csv, .txt, .gz, should support .bgz in the future
+    # 2. check format --> define separator 
+    # 3. check sanity of data --> at least 1 row, required columns
+    # 4. return data
+
+
+# helper functions
